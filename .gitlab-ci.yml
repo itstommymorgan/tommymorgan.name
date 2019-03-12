@@ -13,6 +13,8 @@ test:
 pages:
   script:
   - hugo
+  - mkdir -p public/.well-known/acme-challenge/
+  - cp -R acme-challenge public/.well-known/
   artifacts:
     paths:
     - public
