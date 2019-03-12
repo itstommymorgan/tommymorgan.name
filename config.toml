@@ -12,7 +12,7 @@ theme = "hermit"
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04 -0700"
 
-  homeSubtitle = "Some sentence about me."
+  homeSubtitle = "Engineering Manager @ Auth0. Formerly GitLab and Treehouse."
 
   [[params.social]]
     name = "twitter"
