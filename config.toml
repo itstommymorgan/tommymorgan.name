@@ -1,3 +1,40 @@
-baseURL = "http://example.org/"
+baseURL = "http://tommymorgan.name/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Tommy Morgan"
+theme = "hermit"
+
+[author]
+  name = "Tommy Morgan"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  homeSubtitle = "Some sentence about me."
+
+  [[params.social]]
+    name = "twitter"
+    url = "https://twitter.com/itstommymorgan"
+
+  [[params.social]]
+    name = "gitlab"
+    url = "https://gitlab.com/tommy.morgan"
+
+  [[params.social]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/tommy-morgan/"
+
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/wellbredgrapefruit"
+
+  [[params.social]]
+    name = "email"
+    url = "mailto:tommy.morgan@gmail.com"
+
+  [[params.social]]
+    name = "calendar"
+    url = "https://calendly.com/tommy-morgan"
+
