@@ -1,4 +1,4 @@
-baseURL = "http://tommymorgan.name/"
+baseURL = "https://tommymorgan.name/"
 languageCode = "en-us"
 title = "Tommy Morgan"
 theme = "hermit"
