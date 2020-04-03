@@ -32,7 +32,7 @@ theme = "hermit"
 
   [[params.social]]
     name = "email"
-    url = "mailto:tommy.morgan@gmail.com"
+    url = "mailto:tommy@tommymorgan.name"
 
   [[params.social]]
     name = "calendar"
