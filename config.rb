@@ -18,3 +18,7 @@ page '/*.txt', layout: false
 helpers do
 
 end
+
+configure :build do
+  set :build_dir, 'public'
+end
