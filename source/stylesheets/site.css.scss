@@ -1,0 +1,127 @@
+@use "sass:color";
+
+$header-family: 'Concert One', cursive;
+$font-family: 'Noto Sans', sans-serif;
+
+$bg-color: #272727;
+$fg-color: #b4b4b4;
+$accent-1: #ff652f;
+$accent-2: #ffe400;
+$accent-3: #14a76c;
+
+$link-color: $accent-3;
+
+body {
+  background-color: $bg-color;
+  color: $fg-color;
+  font-family: $font-family;
+  font-size: 1.2rem;
+  padding-bottom: 60px;
+}
+
+h1, h2, h3, h4, h5 {
+  color: $accent-2;
+  font-family: $header-family;
+}
+
+.subtitle {
+  font-family: $font-family;
+}
+
+#header {
+  h1, h2, h3, h4, h5 {
+    color: $accent-1;
+  }
+}
+
+p {
+  strong {
+    color: $accent-1;
+    font-weight: bolder;
+    opacity: 0.8;
+  }
+
+  .emoji {
+    color: $accent-1;
+    font-weight: bolder;
+    opacity: 0.8;
+    writing-mode: vertical-rl;
+  }
+}
+
+a:link {
+  color: $link-color;
+}
+
+a:visited {
+  color: $link-color;
+}
+
+a:hover {
+  color: $link-color;
+  opacity: 0.8;
+}
+
+a:active {
+  color: $link-color;
+}
+
+.headshot {
+  border-radius: 50% !important;
+  border: 4px $accent-1 solid;
+  width: 300px;
+  margin: 0rem;
+}
+
+.headshot-container {
+  float: right;
+  margin: 0rem 0rem 2rem 2rem;
+  width: 300px;
+}
+
+nav {
+  background-color: $bg-color;
+  border-top: 4px solid $accent-3;
+
+  .navbar-brand {
+    color: $link-color;
+    font-family: $header-family;
+    font-size: 1.5rem;
+  }
+
+  .right-nav {
+    float: right;
+
+    .navbar-toggler {
+      color: $link-color;
+    }
+  }
+}
+
+
+// media break for everything in bootstrap md and below
+@media (max-width: 767.98px) {
+  #page-title {
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+    padding-bottom: 0.5rem !important;
+    padding-top: 1rem !important;
+    margin-bottom: 0rem !important;
+  }
+
+  .headshot-container {
+    margin: 1rem;
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  h1, h2, h3, h4, h5 {
+    text-align: center;
+  }
+
+  p {
+    text-align: justified;
+    text-justify: inter-word;
+  }
+}
