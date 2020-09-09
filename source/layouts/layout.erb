@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tommy Morgan - <%= current_page.data.title %></title>
+    <%= partial "stylesheet_tags" %>
+  </head>
+  <body>
+    <div class="container-fluid" id="header">
+      <div id="page-title" class="p-4">
+        <h1 class="display-3">Tommy Morgan</h1>
+        <% if current_page.data.subtitle %>
+          <h2 class="display-5"><%= current_page.data.subtitle %>
+        <% end %>
+      </div>
+    </div>
+    <div class="container">
+      <%= yield %>
+    </div>
+
+    <%= partial "navbar" %>
+
+    <%= partial "javascript_tags" %>
+  </body>
+</html>
