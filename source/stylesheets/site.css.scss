@@ -75,6 +75,8 @@ p {
 nav#footer {
   background-color: $accent-3;
 
+  padding-top: 0rem;
+
   a:link, a:visited, a:hover, a:active {
     color: $bg-color;
   }
