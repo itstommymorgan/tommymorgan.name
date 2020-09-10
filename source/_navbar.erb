@@ -1,50 +1,38 @@
-<nav class="navbar fixed-bottom navbar-expand-md">
+<nav class="navbar fixed-bottom" id="footer">
   <div class="fluid-container" style="width: 100%;">
-    <a class="navbar-brand" href="/">
-      Tommy Morgan
-    </a>
-    <div class="right-nav">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#social-links" aria-controls="social-links" aria-expanded="false" aria-label="Toggle Navigation">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 80" width="24" height="24" fill="currentColor">
-          <rect width="100" height="20"></rect>
-          <rect y="30" width="100" height="20"></rect>
-          <rect y="60" width="100" height="20"></rect>
-        </svg>
-      </button>
-      <div class="collapse navbar-collapse" id="social-links">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="https://twitter.com/itstommymorgan" target="_blank" rel="noopener" title="itstommymorgan on Twitter">
-              <%= partial "twitter_svg" %>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://gitlab.com/tommy.morgan" target="_blank" rel="noopener" title="tommy.morgan on GitLab">
-              <%= partial "gitlab_svg" %>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://linkedin.com/in/tommy-morgan" target="_blank" rel="noopener" title="Tommy Morgan on LinkedIn">
-              <%= partial "linkedin_svg" %>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://github.com/wellbredgrapefruit" target="_blank" rel="noopener" title="Wellbredgrapefruit on GitHub">
-              <%= partial "github_svg" %>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="mailto:tommy@tommymorgan.name" target="_blank" rel="noopener" title="Email Tommy Morgan">
-              <%= partial "email_svg" %>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://calendly.com/tommy-morgan" target="_blank" rel="noopener" title="Tommy Morgan on Calendly">
-              <%= partial "calendar_svg" %>
-            </a>
-          </li>
-        </ul>
-      </div>
+    <div class="social-links">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/itstommymorgan" target="_blank" rel="noopener" title="itstommymorgan on Twitter">
+            <%= partial "twitter_svg" %>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://gitlab.com/tommy.morgan" target="_blank" rel="noopener" title="tommy.morgan on GitLab">
+            <%= partial "gitlab_svg" %>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://linkedin.com/in/tommy-morgan" target="_blank" rel="noopener" title="Tommy Morgan on LinkedIn">
+            <%= partial "linkedin_svg" %>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/wellbredgrapefruit" target="_blank" rel="noopener" title="Wellbredgrapefruit on GitHub">
+            <%= partial "github_svg" %>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:tommy@tommymorgan.name" target="_blank" rel="noopener" title="Email Tommy Morgan">
+            <%= partial "email_svg" %>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://calendly.com/tommy-morgan" target="_blank" rel="noopener" title="Tommy Morgan on Calendly">
+            <%= partial "calendar_svg" %>
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>

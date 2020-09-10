@@ -49,21 +49,14 @@ p {
   }
 }
 
-a:link {
-  color: $link-color;
-}
+#content {
+  a:link, a:visited, a:hover, a:active {
+    color: $link-color;
+  }
 
-a:visited {
-  color: $link-color;
-}
-
-a:hover {
-  color: $link-color;
-  opacity: 0.8;
-}
-
-a:active {
-  color: $link-color;
+  a:hover {
+    opacity: 0.8;
+  }
 }
 
 .headshot {
@@ -79,21 +72,27 @@ a:active {
   width: 300px;
 }
 
-nav {
-  background-color: $bg-color;
-  border-top: 4px solid $accent-3;
+nav#footer {
+  background-color: $accent-3;
 
-  .navbar-brand {
-    color: $link-color;
-    font-family: $header-family;
-    font-size: 1.5rem;
+  a:link, a:visited, a:hover, a:active {
+    color: $bg-color;
   }
 
-  .right-nav {
-    float: right;
+  a:hover {
+    opacity: 0.8;
+  }
 
-    .navbar-toggler {
-      color: $link-color;
+  .social-links {
+    display: table;
+    margin: 0 auto;
+    
+    .navbar-nav {
+      flex-direction: row;
+
+      .nav-item {
+        padding: 0rem 1rem;
+      }
     }
   }
 }
