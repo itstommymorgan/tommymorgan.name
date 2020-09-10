@@ -30,7 +30,16 @@ h1, h2, h3, h4, h5 {
 
 #header {
   h1, h2, h3, h4, h5 {
+    text-align: center;
     color: $accent-1;
+
+    a {
+      color: $accent-1;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
   }
 }
 
