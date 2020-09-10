@@ -4,3 +4,4 @@
 .sass-cache
 build/
 **/tags
+source/playground.html.erb
