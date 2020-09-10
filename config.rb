@@ -20,5 +20,6 @@ helpers do
 end
 
 configure :build do
+  config[:prod] = true
   set :build_dir, 'public'
 end
