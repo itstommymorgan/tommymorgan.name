@@ -98,6 +98,50 @@ nav {
   }
 }
 
+.callout-1, .callout-2, .callout-3 {
+  display: block;
+  position: relative;
+  margin: 2rem 0rem;
+
+  h3 {
+    margin: 0rem;
+    padding: 1rem 0.2rem;
+    height: 100%;
+    writing-mode: vertical-rl;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  p {
+    margin-left: 3rem;
+  }
+}
+
+.callout-1 {
+  border: 2px solid $accent-1;
+  h3 {
+    color: $bg-color;
+    background-color: $accent-1;
+  }
+}
+
+.callout-2 {
+  border: 2px solid $accent-2;
+  h3 {
+    color: $bg-color;
+    background-color: $accent-2;
+  }
+}
+
+.callout-3 {
+  border: 2px solid $accent-3;
+  h3 {
+    color: $bg-color;
+    background-color: $accent-3;
+  }
+}
 
 // media break for everything in bootstrap md and below
 @media (max-width: 767.98px) {
