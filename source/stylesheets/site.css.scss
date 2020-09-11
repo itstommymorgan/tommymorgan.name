@@ -5,6 +5,7 @@ $font-family: 'Noto Sans', sans-serif;
 
 $bg-color: #272727;
 $fg-color: #b4b4b4;
+$strong-color: #e4e4e4;
 $accent-1: #ff652f;
 $accent-2: #ffe400;
 $accent-3: #14a76c;
@@ -45,15 +46,13 @@ h1, h2, h3, h4, h5 {
 
 p {
   strong {
-    color: $accent-1;
+    color: $strong-color;
     font-weight: bolder;
-    opacity: 0.8;
   }
 
   .emoji {
-    color: $accent-1;
+    color: $strong-color;
     font-weight: bolder;
-    opacity: 0.8;
     writing-mode: vertical-rl;
   }
 }
