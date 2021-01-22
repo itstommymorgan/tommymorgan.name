@@ -1,0 +1,35 @@
+---
+title: My Slack Statuses
+---
+
+<h1 class="display-3">My Slack Statuses</h1>
+
+<p>I like to make fun (or sometimes just weird) references with my slack statuses. I get asked about them a lot. So I thought I'd publish them!</p>
+
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Date</th>
+      <th scope="col">Status</th>
+      <th scope="col">Source</th>
+    </tr>
+  </thead>
+  <% data.slack_statuses.each do |status| %>
+    <tr>
+      <td><strong><%= status.date %></strong></td>
+      <td>
+        <%= status.emoji %>
+        <%= status.text %>
+      </td>
+      <td>
+        <% if status.link %>
+          <a href="<%= status.link %>" target="_blank">
+            <%= status.source %>
+          </a>
+        <% else %>
+          <%= status.source %>
+        <% end %>
+      </td>
+    </tr>
+  <% end %>
+</table>

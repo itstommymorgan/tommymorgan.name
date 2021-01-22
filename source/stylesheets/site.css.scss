@@ -152,6 +152,26 @@ nav#footer {
   }
 }
 
+table, th, td {
+  border: 1px solid $accent-1;
+}
+
+th, td {
+  padding: 1rem 0.5rem;
+  vertical-align: center;
+}
+
+th:first-child, td:first-child {
+    min-width: 8rem;
+    text-align: center;
+}
+
+th {
+  background-color: $accent-1;
+  color: $bg-color;
+  font-weight: bold;
+}
+
 // media break for everything in bootstrap md and below
 @media (max-width: 767.98px) {
   #page-title {
