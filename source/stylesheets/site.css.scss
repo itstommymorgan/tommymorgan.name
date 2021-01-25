@@ -172,6 +172,10 @@ th {
   font-weight: bold;
 }
 
+img.emoji {
+  max-height: 1.5rem;
+}
+
 // media break for everything in bootstrap md and below
 @media (max-width: 767.98px) {
   #page-title {

@@ -18,7 +18,11 @@ title: My Slack Statuses
     <tr>
       <td><strong><%= status.date %></strong></td>
       <td>
-        <%= status.emoji %>
+        <% if status.emoji && (status.emoji.length > 5) %>
+          <img class="emoji" src="<%= status.emoji %>"/>
+        <% else %>
+          <%= status.emoji %>
+        <% end %>
         <%= status.text %>
       </td>
       <td>
