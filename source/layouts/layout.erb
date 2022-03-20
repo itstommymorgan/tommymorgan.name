@@ -10,18 +10,14 @@
   </head>
   <body>
     <div class="container-fluid" id="header">
-      <div id="page-title" class="p-4">
-        <h1 class="display-3"><a href="/">Tommy Morgan</a></h1>
-        <% if current_page.data.subtitle %>
-          <h2 class="display-5"><%= current_page.data.subtitle %>
-        <% end %>
+      <div id="page-title">
+        <h1 id="title-heading"><a href="/">Tommy Morgan</a></h1>
       </div>
+      <%= partial "main_nav" %>
     </div>
     <div class="container" id="content">
       <%= yield %>
     </div>
-
-    <%= partial "navbar" %>
 
     <%= partial "javascript_tags" %>
   </body>
