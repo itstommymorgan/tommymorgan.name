@@ -4,20 +4,12 @@ $header-family: 'Roboto Slab', serif;
 $font-family: 'Lato', sans-serif;
 
 $light-shade: #f8f7f6;
-$dark-shade: #333a59;
-$dark-accent: #913939;
-$main-color: #7c9fc6;
-$light-accent: #6e8397;
+$dark-shade: #080a0b;
+$dark-accent: #214133;
+$main-color: #527063;
+$light-accent: #6f897e;
 
 $link-color: $light-accent;
-
-.shadowed {
-  box-shadow: 0 10px 20px -12px rgba(0,0,0,0.42), 0 3px 20px 0px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.2);
-}
-
-.text-shadowed {
-  text-shadow: 0 3px 20px rgba(0,0,0,0.12), 0 8px 10px rgba(0,0,0,0.2);
-}
 
 body {
   background-color: $light-shade;
@@ -43,7 +35,6 @@ h1, h2, h3, h4, h5 {
     text-align: center;
 
     #title-heading {
-      @extend .text-shadowed;
       color: $main-color;
       font-weight: 900;
       font-size: 11vw;
@@ -61,7 +52,6 @@ h1, h2, h3, h4, h5 {
   }
 
   nav {
-    @extend .shadowed;
     background-color: $main-color;
     margin: 0rem 5vw;
     margin-bottom: 2rem;
@@ -87,7 +77,6 @@ h1, h2, h3, h4, h5 {
 
         &.dropdown {
           .dropdown-menu {
-            @extend .shadowed;
             position: absolute;
 
             .dropdown-item:hover {
@@ -135,32 +124,20 @@ p {
   width: 300px;
 }
 
-table, th, td {
-  border: 1px solid $main-color;
-}
-
-th, td {
-  vertical-align: center;
-}
-
-th:first-child, td:first-child {
-    min-width: 8rem;
-    text-align: center;
-}
-
-th {
-  background-color: $main-color;
-  color: $light-shade;
-  font-weight: bold;
-  padding: 0.3rem;
-}
-
-td {
-  padding: 0.5rem;
-}
-
 img.emoji {
   max-height: 1.5rem;
+}
+
+.date {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.slack-status-source {
+  margin-bottom: 2rem;
+
+  font-size: 0.8rem;
+
 }
 
 // media break for everything in bootstrap md and below
