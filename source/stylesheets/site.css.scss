@@ -1,28 +1,28 @@
 @use "sass:color";
 
-$header-family: 'Concert One', cursive;
-$font-family: 'Noto Sans', sans-serif;
+$header-family: 'Roboto Slab', serif;
+$font-family: 'Lato', sans-serif;
 
-$bg-color: #272727;
-$fg-color: #b4b4b4;
-$strong-color: #e4e4e4;
-$accent-1: #ff652f;
-$accent-2: #ffe400;
-$accent-3: #14a76c;
+$light-shade: #f8f7f6;
+$dark-shade: #080a0b;
+$dark-accent: #214133;
+$main-color: #527063;
+$light-accent: #6f897e;
 
-$link-color: $accent-3;
+$link-color: $light-accent;
 
 body {
-  background-color: $bg-color;
-  color: $fg-color;
+  background-color: $light-shade;
+  color: $dark-shade;
   font-family: $font-family;
   font-size: 1.2rem;
   padding-bottom: 60px;
 }
 
 h1, h2, h3, h4, h5 {
-  color: $accent-2;
+  color: $dark-accent;
   font-family: $header-family;
+  font-weight: 700;
 }
 
 .subtitle {
@@ -30,28 +30,72 @@ h1, h2, h3, h4, h5 {
 }
 
 #header {
-  h1, h2, h3, h4, h5 {
+  #page-title {
+    margin: 1rem 0rem;
     text-align: center;
-    color: $accent-1;
 
-    a {
-      color: $accent-1;
+    #title-heading {
+      color: $main-color;
+      font-weight: 900;
+      font-size: 11vw;
+      white-space: nowrap;
+      display: inline-block;
+
+      a {
+        color: $main-color;
+      }
+
+      a:hover {
+        text-decoration: none;
+      }
     }
+  }
 
-    a:hover {
-      text-decoration: none;
+  nav {
+    background-color: $main-color;
+    margin: 0rem 5vw;
+    margin-bottom: 2rem;
+
+    border-radius: 3px;
+    .navbar-nav {
+      flex-direction: row;
+      .nav-item {
+        padding: 0rem 0.75rem;
+
+        &.active {
+          background-color: rgba(255,255,255,0.1);
+        }
+
+        .nav-link {
+          color: $light-shade;
+
+          &.disabled {
+            opacity: 0.5;
+          }
+
+        }
+
+        &.dropdown {
+          .dropdown-menu {
+            position: absolute;
+
+            .dropdown-item:hover {
+              background-color: $main-color;
+              color: $light-shade;
+            }
+          }
+        }
+      }
     }
   }
 }
 
 p {
   strong {
-    color: $strong-color;
     font-weight: bolder;
   }
 
   .emoji {
-    color: $strong-color;
     font-weight: bolder;
     writing-mode: vertical-rl;
   }
@@ -69,7 +113,7 @@ p {
 
 .headshot {
   border-radius: 50% !important;
-  border: 4px $accent-1 solid;
+  border: 4px $dark-accent solid;
   width: 300px;
   margin: 0rem;
 }
@@ -80,100 +124,20 @@ p {
   width: 300px;
 }
 
-nav#footer {
-  background-color: $accent-3;
-
-  padding-top: 0rem;
-
-  a:link, a:visited, a:hover, a:active {
-    color: $bg-color;
-  }
-
-  a:hover {
-    opacity: 0.8;
-  }
-
-  .social-links {
-    display: table;
-    margin: 0 auto;
-    
-    .navbar-nav {
-      flex-direction: row;
-
-      .nav-item {
-        padding: 0rem 1rem;
-      }
-    }
-  }
-}
-
-.callout-1, .callout-2, .callout-3 {
-  display: block;
-  position: relative;
-  margin: 2rem 0rem;
-
-  h3 {
-    margin: 0rem;
-    padding: 1rem 0.2rem;
-    height: 100%;
-    writing-mode: vertical-rl;
-    text-transform: uppercase;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  p {
-    margin-left: 3rem;
-  }
-}
-
-.callout-1 {
-  border: 2px solid $accent-1;
-  h3 {
-    color: $bg-color;
-    background-color: $accent-1;
-  }
-}
-
-.callout-2 {
-  border: 2px solid $accent-2;
-  h3 {
-    color: $bg-color;
-    background-color: $accent-2;
-  }
-}
-
-.callout-3 {
-  border: 2px solid $accent-3;
-  h3 {
-    color: $bg-color;
-    background-color: $accent-3;
-  }
-}
-
-table, th, td {
-  border: 1px solid $accent-1;
-}
-
-th, td {
-  padding: 1rem 0.5rem;
-  vertical-align: center;
-}
-
-th:first-child, td:first-child {
-    min-width: 8rem;
-    text-align: center;
-}
-
-th {
-  background-color: $accent-1;
-  color: $bg-color;
-  font-weight: bold;
-}
-
 img.emoji {
   max-height: 1.5rem;
+}
+
+.date {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.slack-status-source {
+  margin-bottom: 2rem;
+
+  font-size: 0.8rem;
+
 }
 
 // media break for everything in bootstrap md and below
