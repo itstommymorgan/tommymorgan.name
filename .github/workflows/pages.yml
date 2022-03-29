@@ -13,7 +13,7 @@ jobs:
       - name: Checkout the code
         uses: actions/checkout@v2
       - name: install bundler
-        run: "gem install bundler -v=2.1.4"
+        run: "sudo gem install bundler -v=2.1.4"
       - name: install gems with bundle
         run: "bundle install --path vendor"
       - name: build the static site
