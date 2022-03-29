@@ -5,11 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: update apt
-        run: "apt-get update -yqqq"
+        run: "sudo apt update -yqqq"
       - name: install nodejs
-        run: "apt-get install -y nodejs"
+        run: "sudo apt install -y nodejs"
       - name: install ruby
-        run: "apt-get install -y ruby-full"
+        run: "sudo apt install -y ruby-full"
       - name: Checkout the code
         uses: actions/checkout@v2
       - name: install gems with bundle
@@ -21,4 +21,3 @@ jobs:
         with:
           name: tommymorgan.name
           path: public
-
