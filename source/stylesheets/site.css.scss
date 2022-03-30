@@ -140,6 +140,54 @@ img.emoji {
 
 }
 
+.resume {
+  margin-top: 5rem;
+
+  h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  th {
+    text-align: right;
+    font-weight: bold;
+    min-width: 15rem;
+    vertical-align: top;
+  }
+
+  td {
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  .role-heading {
+    .main-role {
+      font-family: $header-family; 
+      font-size: 1.5rem;
+    }
+
+    .other-role {
+      font-family: $header-family;
+    }
+
+    .company-description {
+      font-style: italic;
+      font-size: 0.9rem;
+    }
+
+    padding-bottom: 1rem;
+  }
+
+  ul.tech-skills {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      display: flex;
+      padding: 1.5rem;
+    }
+  }
+}
+
 // media break for everything in bootstrap md and below
 @media (max-width: 767.98px) {
   #page-title {

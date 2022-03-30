@@ -1,0 +1,77 @@
+---
+title: My Resume
+identifier: resume
+---
+
+<h1 class="display-3">My Resume</h1>
+
+<div class="resume">
+  <h2>People-First Engineering Leader</h2>
+
+  <p>Software engineering leader with a reputation for building strong relationships and providing a nurturing, high-trust environment for his teams. Holds 15+ years of experience in software engineering, including 8 years in leadership and 3+ years as an executive with board exposure. Seen as a strong and technically credible leader by directors, managers, and ICs across development, design, product, infrastructure, and data science.</p>
+
+  <table>
+    <tr>
+      <th>Growth-Minded</th>
+      <td>Recognized for learning quickly and adapting to change with exposure to a wide variety of technologies, industries, and business models.</td>
+    </tr>
+    <tr>
+      <th>Authentic Leader</th>
+      <td>Seen as a genuine, honest, and approachable leader. Appreciated for his ability to maintain composure and compassion in the face of crisis and confrontation.</td>
+    </tr>
+    <tr>
+      <th>Deliberate Thinker</th>
+      <td>Known strengths in abstract reasoning, critical thinking, and problem solving – peers often rely on these insights to vet and sharpen ideas, strategies, and communications.</td>
+    </tr>
+    <tr>
+      <th>Passionate Advocate</th>
+      <td>Described by peers and reports as a loyal and empathetic leader with a clear passion for mentoring, coaching, and sponsoring others in and beyond their current role.</td>
+    </tr>
+  </table>
+
+  <h2>Experience</h2>
+  <% data.job_history.each do |role| %>
+    <div class="role">
+      <div class="role-heading">
+        <div class="main-role">
+          <% if role.main_role %>
+            <%= role.main_role %> |
+          <% end %>
+          <%= role.company %>
+          |
+          <%= role.start_year %>&mdash;<%= role.end_year %>
+        </div>
+        <% if role.other_roles %>
+          <% role.other_roles.each do |other_role| %>
+            <div class="other-role">
+              <%= other_role.title %> | <%= other_role.start_year %>&mdash;<%= other_role.end_year %>
+            </div>
+          <% end %>
+        <% end %>
+        <% if role.company_description %>
+          <div class="company-description"><%= role.company_description %></div>
+        <% end %>
+      </div>
+      <div class="role-body">
+        <p><%= role.description %></p>
+        <% if role.bullets %>
+          <ul>
+            <% role.bullets.each do |bullet| %>
+              <li><%= bullet %></li>
+            <% end %>
+          </ul>
+        <% end %>
+    </div>
+  <% end %>
+
+  <h2>Technical Skills</h2>
+  <ul class="tech-skills">
+    <% data.technical_skills.each do |skill| %>
+      <li><%= skill %></li>
+    <% end %>
+  </ul>
+
+  <h2>Education</h2>
+  <p>Bachelor of Science in Computer Science<br/>Furman University<br/>Greenville, SC</p>
+</div>
+

@@ -1,0 +1,64 @@
+- company: Crystal Knows
+  company_description: Crystal Knows provides DISC-based personality predictions and assessments to help you lead, hire, and sell.
+  main_role: VP Engineering
+  start_year: 2021
+  end_year: Present
+  description: Member of the executive leadership team responsible for stabilizing, maintaining, and building upon a full-stack product (Ruby/Rails backend with TypeScript/React frontend).
+  bullets:
+    - Inherited an engineering team of 1 full-stack developer, grew to a 7-person cross-functional Product Delivery organization
+    - Implemented agile processes, tooling, and SDLC including CI/CD
+    - Defined hiring, career progression, and compensation philosophies for a growing team
+    - Led development, validation, and architecture efforts for new AI engine for predicting personalities.
+    - Moved company from ad-hoc AWS infrastructure to Terraform and Kubernetes-backed service-oriented architecture
+- company: Marqeta
+  company_description: Marqeta pioneered modern card issuing through API-first functionality and just-in-time processing for Square, Doordash, Expensify, and others.
+  main_role: Senior Engineering Manager
+  start_year: 2020
+  end_year: 2021
+  description: Managed 9 engineers across teams responsible for card fulfillment and processing and contributed to department-wide initiatives as a senior member of leadership.
+  bullets:
+    - Reduced bias and inconsistency in engineering hiring processes by introducing objective evaluation criteria and interview training
+    - Oversaw efforts to break Java monolith into a service-oriented architecture
+    - Doubled team velocity and throughput over first 6 months with agile software practices
+    - Implemented engineering-wide documentation handbook and drove acceptance across the department
+- company: Auth0
+  company_description: Auth0 (since acquired by Okta) provides easy to implement and widely compatible authentication and authorization as a service.
+  main_role: Senior Engineering Manager
+  start_year: 2019
+  end_year: 2020
+  description: Managed 15 engineers across 3 teams responsible for IAM, User Management, and Continuous Authentication.
+  bullets:
+    - More than doubled team velocities through the introduction of agile project management methods
+    - Identified, trained, and sponsored internal candidates for managerial roles to prepare for growth
+    - Sponsored a focus on improved team diversity and objectivity in hiring, resulting in 50% of new hires being URM candidates.
+- company: GitLab
+  company_description: GitLab provides a modern, all-in-one DevOps solution as a SaaS or self-managed solution.
+  main_role: Director of Engineering
+  start_year: 2018
+  end_year: 2019
+  description: Responsible for all backend engineers for the “Dev” stages of the GitLab product model. Grew a team of 3 managers and ~20 ICs to 6 managers and ~80 ICs.
+  bullets:
+    - Rebuilt talent acquisition and career ladder for consistency across engineering managers/teams and advocated for resulting pay equity adjustments
+    - Directly oversaw the Gitaly project, a Golang backend for interfacing with the git filesystem to remove a critical dependency on NFS
+    - Created resources and training programs for scaling our engineering managers
+- company: Treehouse
+  company_description: Treehouse is an online school that provides high-quality training material for people who are interested in breaking into a technical career.
+  main_role: VP Engineering
+  start_year: 2015
+  end_year: 2018
+  other_roles:
+    - title: Engineering Manager
+      start_year: 2013
+      end_year: 2015
+    - title: Software Engineer
+      start_year: 2012
+      end_year: 2013
+  description: Joined as the first developer and grew to VPE role with an overall team size of 50+ across web and mobile development, product design, infrastructure, and data science and analytics.
+  bullets:
+    - Advanced UX experimentation frameworks and processes to increase our speed and confidence in user testing.
+    - Created hiring processes, career ladders, compensation philosophies, and overall managed org growth from 2 to 50+ people.
+    - Spearheaded development of large-scale technical initiatives including AI, containerized code execution for student assessments, and the construction of a reliable data pipeline/warehouse.
+- company: Previous Experience
+  start_year: 2006
+  end_year: 2012
+  description: Over 6 years as a senior software engineer/analyst in Java web development and custom software development.
