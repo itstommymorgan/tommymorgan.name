@@ -7,7 +7,7 @@ identifier: slack
 
 <p>I like to make fun (or sometimes just weird) references with my slack statuses. I get asked about them a lot. So I thought I'd publish them!</p>
 
-<% data.slack_statuses.each do |status| %>
+<% data.slack_statuses.select { |status| status.date.year == year }.each do |status| %>
   <div>
     <div class="date"><%= status.date %></div>
     <% if status.emoji && (status.emoji.length > 5) %>

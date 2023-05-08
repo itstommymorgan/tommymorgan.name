@@ -13,15 +13,23 @@ module ::AutoprefixerRails
 end
 
 # Per-page layout changes
-page '/*.xml', layout: false
-page '/*.json', layout: false
-page '/*.txt', layout: false
+page "/*.xml", layout: false
+page "/*.json", layout: false
+page "/*.txt", layout: false
+
+years = data.slack_statuses.map { |status| status.date.year }.uniq
+
+years.each do |year|
+  proxy "/slack-statuses/#{year}", "/slack.html", locals: { year: year }
+end
+
+# No idea why I have to hand-code this - will have to figure it out later.
+proxy "/slack-statuses", "/slack.html", locals: { year: 2023 }
 
 helpers do
-
 end
 
 configure :build do
   config[:prod] = true
-  set :build_dir, 'public'
+  set :build_dir, "public"
 end
