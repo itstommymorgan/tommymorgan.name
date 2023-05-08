@@ -17,6 +17,8 @@ page "/*.xml", layout: false
 page "/*.json", layout: false
 page "/*.txt", layout: false
 
+ignore "/slack.html"
+
 years = data.slack_statuses.map { |status| status.date.year }.uniq
 
 years.each do |year|
