@@ -24,7 +24,7 @@ years.each do |year|
 end
 
 # No idea why I have to hand-code this - will have to figure it out later.
-proxy "/slack-statuses", "/slack.html", locals: { year: 2023 }, layout: "layout"
+proxy "/slack-statuses/index.html", "/slack.html", locals: { year: 2023 }, layout: "layout"
 
 helpers do
 end
