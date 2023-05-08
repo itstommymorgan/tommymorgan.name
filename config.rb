@@ -20,7 +20,7 @@ page "/*.txt", layout: false
 years = data.slack_statuses.map { |status| status.date.year }.uniq
 
 years.each do |year|
-  proxy "/slack-statuses/#{year}", "/slack.html", locals: { year: year }, layout: "layout", ignore: true
+  proxy "/slack-statuses/#{year}/index.html", "/slack.html", locals: { year: year }, layout: "layout", ignore: true
 end
 
 # No idea why I have to hand-code this - will have to figure it out later.
