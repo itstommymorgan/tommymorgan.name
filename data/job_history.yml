@@ -1,8 +1,14 @@
+- company: Tidelift
+  company_description: Tidelift helps security-conscious companies manage the security of their open-source software supply chain by building direct relationships with open source maintainers and ensuring they are getting compensated for the work they do to keep their packages secure and reliable.
+  main_role: Head of Software Engineering
+  start_year: 2022
+  end_year: Present
+  description: Leading all software engineers and teams responsible for product delivery.
 - company: Crystal Knows
   company_description: Crystal Knows provides DISC-based personality predictions and assessments to help you lead, hire, and sell.
   main_role: VP Engineering
   start_year: 2021
-  end_year: Present
+  end_year: 2022
   description: Member of the executive leadership team responsible for stabilizing, maintaining, and building upon a full-stack product (Ruby/Rails backend with TypeScript/React frontend).
   bullets:
     - Inherited an engineering team of 1 full-stack developer, grew to a 7-person cross-functional Product Delivery organization
