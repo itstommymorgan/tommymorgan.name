@@ -8,7 +8,7 @@ identifier: slack
 <p>I like to make fun (or sometimes just weird) references with my slack statuses. I get asked about them a lot. So I thought I'd publish them!</p>
 
 <% years = data.slack_statuses.map { |status| status.date.year }.uniq %>
-<ul>
+<ul class="slack-years">
   <% years.each do |y| %>
     <% if y == year %>
       <li><strong><%= y %></strong></li>

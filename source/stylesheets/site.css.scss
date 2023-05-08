@@ -133,6 +133,19 @@ img.emoji {
   font-style: italic;
 }
 
+.slack-years {
+  list-style: none;
+  display: flex;
+  padding-left: 0px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+
+  li {
+    padding-right: 10px;
+    font-size: 1.5rem;
+  }
+}
+
 .slack-status-source {
   margin-bottom: 2rem;
 
